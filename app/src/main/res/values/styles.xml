@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.AbsenPemdes." parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="backgroundColor">@color/background_color</item>
+        <item name="font">@color/text_color</item>
+        <item name="colorSecondary">@color/secondary</item>
+        <item name="buttonStyle">@color/background_button</item>
+        <item name="colorSurface">@color/white</item>
+    </style>
+</resources>

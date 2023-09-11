@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/absen_now"
+        android:icon="@android:drawable/ic_menu_agenda"
+        android:title="Absen now"/>
+    <item
+        android:id="@+id/navigation_absen_week"
+        android:icon="@android:drawable/ic_menu_my_calendar"
+        android:title="Histori absen"/>
+    <item
+        android:id="@+id/navigation_location"
+        android:icon="@android:drawable/ic_dialog_map"
+        android:title="Location"/>
+    <item
+        android:id="@+id/navigation_logout"
+        android:icon="@android:drawable/ic_lock_power_off"
+        android:title="Logout"/>
+</menu>
