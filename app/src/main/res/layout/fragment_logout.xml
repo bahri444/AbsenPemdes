@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LogoutFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Kelauar"
+        android:layout_marginTop="-70dp"
+        android:layout_gravity="center"
+        android:fontFamily="@font/poppinssemibold"
+        android:textSize="17dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:textAlignment="center"
+        android:textColor="@color/text_color"
+        android:id="@+id/text_logout"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Yakin ingin keluar dari aplikasi absen.?"
+        android:layout_marginTop="-40dp"
+        android:layout_gravity="center"
+        android:layout_below="@id/text_logout"
+        android:fontFamily="@font/poppinsregular"
+        android:textSize="12dp"
+        android:gravity="center"
+        android:textColor="@color/text_color"
+        android:id="@+id/text_absen_now"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        />
+    <GridLayout
+        android:layout_below="@id/text_absen_now"
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:width="100dp"
+            android:layout_marginRight="20dp"
+            android:backgroundTint="@color/background_button"
+            android:id="@+id/button_cancel"
+            android:text="Tidak"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:width="100dp"
+            android:layout_marginLeft="20dp"
+            android:backgroundTint="@color/background_button"
+            android:id="@+id/button_logout"
+            android:text="Keluar"/>
+    </GridLayout>
+
+</FrameLayout>
