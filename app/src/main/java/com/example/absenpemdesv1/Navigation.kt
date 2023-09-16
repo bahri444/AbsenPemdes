@@ -2,15 +2,17 @@ package com.example.absenpemdesv1
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.TextView
+import android.util.Log
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import androidx.fragment.app.Fragment
+
 class Navigation : AppCompatActivity() {
+
     lateinit var loadBottomNavigation: BottomNavigationView
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_navigation)
-        loadFragment(AbsenNowFragment())
+        loadFragment(AbsenNowFragment()) //panggil fungsi load fragment yang ada di bawah
         loadBottomNavigation = findViewById(R.id.navigation_load) as BottomNavigationView
         loadBottomNavigation.setOnItemSelectedListener{ it
             when (it.itemId) {
@@ -38,9 +40,15 @@ class Navigation : AppCompatActivity() {
             false
         }
     }
+//    function load fragment
     private  fun loadFragment(fragment: Fragment){
         val transaction = supportFragmentManager.beginTransaction()
         transaction.replace(R.id.bottom_navigation,fragment)
         transaction.commit()
     }
+    override fun onStart() {
+        super.onStart()
+    }
+
+
 }
